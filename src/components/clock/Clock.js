@@ -3,6 +3,8 @@ import styles from './Clock.module.css';
 import Counter from './Counter';
 
 export default function Clock() {
+    const date = new Date();
+    const day = date.getDay();
     const [isOn,setIsOn] = useState(false);
 
     const ToggleCounting = () => {
@@ -11,7 +13,7 @@ export default function Clock() {
         });
     }
 
-
+    const isDisabled = !(day == 5 || day ==6);
     
 
 
@@ -21,8 +23,8 @@ export default function Clock() {
             <Counter isOn = {isOn} />
         </div>
         <div className={styles['btn-div']}>
-            <button onClick={ToggleCounting} className={`${styles.btn} ${!isOn ? styles.start: styles.stop}`} >{isOn? 'Stop': 'Start'}</button>
-            <button className={`${styles.btn} ${styles.end}`}> End</button>
+            <button onClick={ToggleCounting} disabled={isDisabled} className={`${styles.btn} ${!isOn ? styles.start: styles.stop}`} >{isOn? 'Stop': 'Start'}</button>
+            <button disabled={isDisabled} className={`${styles.btn} ${styles.end}`}> End</button>
         </div>
     </div> 
   )

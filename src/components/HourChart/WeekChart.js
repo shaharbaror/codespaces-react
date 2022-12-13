@@ -9,8 +9,6 @@ const WeekChart = () => {
         <DayChart day={2}>Tuesday</DayChart>
         <DayChart day={3}>Wednesday</DayChart>
         <DayChart day={4}>Thursday</DayChart>
-        <DayChart day={5}>Thursday</DayChart>
-        <DayChart day={6}>Thursday</DayChart>
     </div>
 };
 

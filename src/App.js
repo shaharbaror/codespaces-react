@@ -1,15 +1,16 @@
 import React from "react";
-import Clock from "./components/clock/Clock";
-import Header from "./components/Header/Header";
-import WeekChart from "./components/HourChart/WeekChart";
+import {Routes, Route} from 'react-router-dom';
+
+import Home from "./pages/Home";
 
 
 function App() {
   return (
     <React.Fragment>
-      <Header />
-      <Clock/>
-      <WeekChart/>
+      <Routes>
+          <Route path="/" element={<Home/>} />
+      
+      </Routes>
     </React.Fragment>
   );
 }
