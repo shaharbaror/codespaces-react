@@ -1,6 +1,9 @@
 import styles from "./Header.module.css";
 
-const Header = () => {
+const Header = (props) => {
+    const path = props.path;
+
+    const TopBtn = <> {path === '/'? <button  >Login</button>: path === '/login'? <button>Go Back</button> : <button>Home</button>}</>;
 
     return <header className={styles.header}>
         <div className={styles['user-div']}>
@@ -13,7 +16,7 @@ const Header = () => {
         </div>
         <div className={styles.userDiv}>
             
-            <button>Login</button>
+            {TopBtn}
         </div>
     </header>
 };

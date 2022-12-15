@@ -46,4 +46,10 @@
     border-radius: 25px;
     border:2px solid rgb(0,0,0);
     font-size: 50px;
+    text-align: center;
+}
+
+.code-div {
+    margin-left: 50px;
+    margin-top: 180px;
 }
