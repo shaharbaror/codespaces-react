@@ -29,7 +29,7 @@
 
 .envelope_image
 {
-    background-image: url("../../../../public//images/email_envelope.png");
+    background-image: url("../../../../public//images/key.png");
 }
 
 .input_wrapper
@@ -124,10 +124,10 @@
     font-size: 3vw;
 }
 
-.change_email
+.resend_code
 {
     font-family: cursive;
-    margin-left: 14.5vw;
+    margin-left: 15.5vw;
     margin-top: 13.5vh;
     color: white;
     font-size: 1vw;
@@ -136,10 +136,10 @@
     width: fit-content;
 }
 
-.change_email:hover
+.resend_code:hover
 {
     transform: scale(1.1);
-    margin-left: 14.5vw;
+    margin-left: 15.5vw;
 }
 
 .back_home

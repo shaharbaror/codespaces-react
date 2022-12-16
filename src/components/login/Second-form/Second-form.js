@@ -1,18 +1,13 @@
 import React from 'react';
-import styles from './First-form.module.css';
+import styles from './Second-form.module.css';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export default function Firstform(props){
+export default function Secondform(){
     const nav = useNavigate();
     const [email_address, set_email_address] = useState('');
     const change_email_address = (event) => {set_email_address(event.target.value);}
     const reroute_home = () => {nav('/', {replace:true});}
-
-    function send_email()
-    {
-        props.next_section();
-    }
 
   return (
     <React.Fragment>
@@ -26,10 +21,10 @@ export default function Firstform(props){
                 <form>
                     <div className={styles.input_wrapper}>
                         <div className={`${styles.envelope_image} ${styles.image}`}/>
-                        <input type="text" className={styles.input} onChange={change_email_address} placeholder="Email address"/>
+                        <input type="text" className={styles.input} onChange={change_email_address} placeholder="Enter the code"/>
                     </div>
-                        <button className={styles.button} onClick={send_email} >Send code</button>
-                        <div className={styles.change_email}>Change email address</div>
+                        <button className={styles.button}>Login</button>
+                        <div className={styles.resend_code}>Resend the code</div>
                 
                 </form>
             </div>
