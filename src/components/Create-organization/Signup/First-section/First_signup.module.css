@@ -1,0 +1,159 @@
+@font-face { font-family: Gin; src: url('../../../../../public/Gin/Hold\ Fast\ Foundry\ -\ Gin\ Rough.otf')} 
+@font-face { font-family: Gin; font-weight: bold; src: url('../../../../../public/Gin/Hold\ Fast\ Foundry\ -\ Gin\ Rough.otf');}
+
+
+.background
+{
+    background-image: url('../../../../../public/images/blue_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter:blur(10px);
+    height: 100%;
+    z-index: -2;
+}
+
+.image
+{
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80%;
+    width: 5vw;
+    margin-top: 0.5vh;
+    margin-left: 0.5vw;
+}
+
+.envelope_image
+{
+    background-image: url("../../../../../public/images/email_envelope.png");
+}
+
+.input_wrapper
+{
+    border-radius: 1vh;
+    background-color: white;
+    display: flex;
+    height: 5vh;
+    width: 30vw;
+    margin-top: 8vh;
+    margin-left: 5vw;
+}
+
+.input
+{
+    margin-left: -2vw;
+    border: none;
+    height: 95%;
+    width:25vw;
+}
+
+.darken
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(54, 54, 54, 0.5);
+    height: 100%;
+    z-index: -1;
+}
+
+.main_card
+{
+    height: 60vh;
+    width: 40vw;
+    margin: 20vh 30vw;
+    background-color: rgba(15, 58, 121, 0.807);
+    border-radius: 2vh;
+    position: absolute;
+}
+
+.main_card_behind
+{
+    height: 60vh;
+    width: 40vw;
+    margin: 25vh 35vw;
+    background-color: rgba(76, 118, 180, 0.886);
+    border-radius: 2vh;
+    position: absolute;
+}
+
+.button
+{
+    letter-spacing: 0.2vh;
+    font-family: Gin;
+    cursor: pointer;
+    margin-top: 2vh;
+    height: 5vh;
+    margin-left: 10vw;
+    width: 20vw;
+    font-size: medium;
+    font-weight: 700;
+    letter-spacing: 0.02vw;
+    border-radius: 1vh;
+    transition-duration: 100ms;
+    border: none;
+    color: white;
+    background-color: rgb(49, 190, 160);
+}
+
+.button:active
+{
+    background-color: rgb(21, 142, 116);
+}
+
+.button:hover
+{
+    transform: scale(1.1);
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: large;
+}
+
+.title
+{
+    font-family: cursive;
+    margin-left: 14.5vw;
+    margin-top: 7vh;
+    color: white;
+    font-size: 3vw;
+}
+
+.back_home
+{
+    position: absolute;
+    letter-spacing: 0.2vh;
+    font-family: Gin;
+    cursor: pointer;
+    margin-top: 2vh;
+    height: 5vh;
+    margin-left: 2vw;
+    width: 7vw;
+    font-size: medium;
+    font-weight: 700;
+    letter-spacing: 0.02vw;
+    border-radius: 1vh;
+    transition-duration: 200ms;
+    border: none;
+    color: white;
+    background-color: rgb(12, 99, 231);
+}
+
+.back_home:active
+{
+    filter: brightness(0.5);
+}
+
+.back_home:hover
+{
+    transform: scaleX(1.1);
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: large;
+}
+

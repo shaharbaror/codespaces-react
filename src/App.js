@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import React from 'react';
 import Login from './components/login/Login';
 import Home from './components/home/Home';
+import Create_organization from './components/Create-organization/Create_organization';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
 
           <Route path="login" element={<Login/>}/>
           <Route path="/" element={<Home/>}/>
+          <Route path="new-organization" element={<Create_organization/>}/>
+          {/* new-organization */}
 
         </Routes>
       </BrowserRouter>
